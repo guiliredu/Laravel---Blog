@@ -36,20 +36,13 @@
           <div class="col-md-8 articles">
 
             @yield('content')
-            
+
           </div>
 
           <div class="col-md-4 sidebar">
-            <div class="widget">
-              <h3>Últimos artigos</h3>
-              <ul>
-                <li><a href="">Lorem ipsum dolor sit amet, consectetur.</a></li>
-                <li><a href="">Non, aut asperiores eveniet impedit sint?</a></li>
-                <li><a href="">Deserunt quidem explicabo illo voluptatibus aperiam.</a></li>
-                <li><a href="">Magnam, facere voluptatum repellendus suscipit provident!</a></li>
-                <li><a href="">Dolorem voluptates, natus totam. Rerum, perspiciatis?</a></li>
-              </ul>
-            </div>
+
+            @include('_sidebar')
+
           </div>
 
         </div>
