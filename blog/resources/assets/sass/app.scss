@@ -1,2 +1,96 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// Colors
+$color: #DA564A;
 
+// Geral
+a {
+	color:$color;
+}
+
+header {
+	background-color:$color;
+	padding:10px 0px;
+
+	h1 {
+		color:#FFF;
+		font-size:50px;
+		margin:0px;
+	}
+	p {
+		color:#FFF;
+		margin-bottom:20px;
+	}
+	ul {
+		padding-left:0px;
+		margin-bottom:0px;
+
+		li {
+			display:inline;
+			margin-right:20px;
+
+			a {
+				color:#FFF;
+				font-weight:bold;
+
+				&:hover {
+					color:#DDD;
+				}
+			}
+		}
+	}
+}
+
+#content {
+	padding:30px 0px;
+}
+
+article {
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+
+	h2 {
+		float:left;
+		width:100%;
+	}
+
+	.article-info {
+		float:left;
+		width:100%;
+		margin-bottom:20px;
+
+		span {
+			float:left;
+			font-size:13px;
+			color:#999;
+		}
+	}
+
+	.article-content {
+		float:left;
+		width:100%;
+		margin-bottom:20px;
+
+		p {
+			font-size:16px;
+			line-height:20px;
+			margin-bottom:10px;
+		}
+	}
+
+	.article-buttons {
+		float:left;
+		width:100%;
+	}
+}
+
+.widget {
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+
+	h3 {
+		float:left;
+		width:100%;
+		margin:0px 0px 10px 0px;
+	}
+}
