@@ -12,5 +12,9 @@
 */
 
 Route::get('/', 'NoticiaController@index');
+
 Route::get('/noticias', 'NoticiaController@index');
 Route::get('/noticia/{id}', 'NoticiaController@single');
+Route::delete('/noticia/{id}', 'NoticiaController@delete');
+
+Route::get('/painel', 'NoticiaController@painel');

@@ -24,7 +24,7 @@
         <ul>
           <li><a href="{{ url('/') }}">Home</a></li>
           <li><a href="{{ url('/noticias') }}">Notícias</a></li>
-          <li><a href="{{ url('/') }}">Painel</a></li>
+          <li><a href="{{ url('/painel') }}">Painel</a></li>
         </ul>
       </div>
     </header>

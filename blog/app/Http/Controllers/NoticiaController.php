@@ -21,12 +21,28 @@ class NoticiaController extends Controller
 
     public function single(Request $request, Noticia $noticia)
     {
-        $noticias = Noticia::orderBy('created_at', 'desc');
+        $noticias = Noticia::orderBy('created_at', 'desc')->get();
         $noticia = Noticia::find($request->id);
 
         return view('noticia', [
             'noticia' => $noticia,
             'noticias' => $noticias
         ]);
+    }
+
+    public function painel(Request $request)
+    {
+        $noticias = Noticia::orderBy('created_at', 'desc')->get();
+
+        return view('painel', [
+            'noticias' => $noticias
+        ]);
+    }
+
+    public function delete(Request $request)
+    {
+    	Noticia::find($request->id)->delete();
+
+    	return redirect('/painel');
     }
 }
