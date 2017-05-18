@@ -8,6 +8,7 @@
         <span>17/05/2017</span>
       </div>
       <div class="article-content">
+      	<img src="{{ asset('img/'.$noticia->imagem) }}" alt="">
         <p>{{ $noticia->texto }}</p>
       </div>
     </article>
