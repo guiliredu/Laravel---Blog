@@ -12,3 +12,7 @@ Uma simples aplicação Laravel de um CMS de Blog - Toda aplicação está na pa
 
 ## Front-end
 gulpfile contém tasks de `sass` e `server`, para compilar o sass e rodar um server de browser-sync, respectivamente. Os arquivos do sass encontram-se em `resources/assets/sass`
+
+## TODO
+* seeds
+* Autenticação de usuários no painel
