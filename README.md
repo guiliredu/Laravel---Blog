@@ -7,4 +7,5 @@ Uma simples aplicação Laravel de um CMS de Blog - Toda aplicação está na pa
 * Verificar se as pastas `storage` e `bootstrap/cache` tem permissão de escrita
 * Renomear o arquivo `.env.example` para `.env`
 * Alterar as configurações de banco de dados no arquivo `.env`
-* Rodar o comando `php artisan key:generate`
+* Rodar o comando `php artisan key:generate` para gera uma nova Key
+* Rodar o comando `php artisan migrate` para gerar as tabelas do banco de dados
