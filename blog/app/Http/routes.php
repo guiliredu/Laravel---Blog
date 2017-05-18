@@ -1,8 +1,5 @@
 <?php
 
-use App\Noticia;
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -14,18 +11,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    $noticias = Noticia::orderBy('created_at', 'desc')->get();
-
-    return view('noticias', [
-        'noticias' => $noticias
-    ]);
-});
-
-Route::get('/noticias', function () {
-    $noticias = Noticia::orderBy('created_at', 'desc')->get();
-
-    return view('noticias', [
-        'noticias' => $noticias
-    ]);
-});
+Route::get('/', 'NoticiaController@index');
+Route::get('/noticias', 'NoticiaController@index');
+Route::get('/noticia/{id}', 'NoticiaController@single');

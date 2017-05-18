@@ -8,8 +8,8 @@
     <title>Laravel - Blog</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -22,9 +22,9 @@
         <h1>Laravel - Blog</h1>
         <p>Exemplo de blog feito com Laravel</p>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Notícias</a></li>
-          <li><a href="#">Painel</a></li>
+          <li><a href="{{ url('/') }}">Home</a></li>
+          <li><a href="{{ url('/noticias') }}">Notícias</a></li>
+          <li><a href="{{ url('/') }}">Painel</a></li>
         </ul>
       </div>
     </header>
