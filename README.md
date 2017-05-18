@@ -9,3 +9,6 @@ Uma simples aplicação Laravel de um CMS de Blog - Toda aplicação está na pa
 * Alterar as configurações de banco de dados no arquivo `.env`
 * Rodar o comando `php artisan key:generate` para gera uma nova Key
 * Rodar o comando `php artisan migrate` para gerar as tabelas do banco de dados
+
+## Front-end
+gulpfile contém tasks de `sass` e `server`, para compilar o sass e rodar um server de browser-sync, respectivamente. Os arquivos do sass encontram-se em `resources/assets/sass`
