@@ -38,8 +38,22 @@
 
 <h2>Adicionar notícia</h2>
 
-{{ Form::open(array('url' => 'foo/bar')) }}
-
+{{ Form::open(array('url' => 'noticia', 'files' => true)) }}
+  <div class="form-group">
+    {{ Form::label('titulo', 'Título da notícia') }}
+    {{ Form::text('titulo', '', array('class' => 'form-control', 'required' => true)) }}
+  </div>
+  <div class="form-group">
+    {{ Form::label('texto', 'Texto da notícia') }}
+    {{ Form::textarea('texto', '', array('class' => 'form-control', 'required' => true)) }}
+  </div>
+  <div class="form-group">
+    {{ Form::label('imagem', 'Imagem da notícia') }}
+    {{ Form::file('imagem', '', array('class' => 'form-control')) }}
+  </div>
+  <div class="form-group">
+    {{ Form::submit('Adicionar', array('class' => 'btn btn-primary pull-right')) }}
+  </div>
 {{ Form::close() }}
 
 @endsection

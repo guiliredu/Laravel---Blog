@@ -45,4 +45,21 @@ class NoticiaController extends Controller
 
     	return redirect('/painel');
     }
+
+    public function insert(Request $request)
+    {
+        $noticia = new Noticia;
+
+        $noticia->titulo = $request->titulo;
+        $noticia->texto = $request->texto;
+        if ($request->hasFile('imagem')) {
+        	$imagem = $request->file('imagem');
+        	$imagem->move('img', $imagem->getClientOriginalName());
+        	$noticia->imagem = $imagem->getClientOriginalName();
+        }
+
+        $noticia->save();
+
+        return redirect('/painel');
+    }
 }

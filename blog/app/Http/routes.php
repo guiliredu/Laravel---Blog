@@ -16,5 +16,6 @@ Route::get('/', 'NoticiaController@index');
 Route::get('/noticias', 'NoticiaController@index');
 Route::get('/noticia/{id}', 'NoticiaController@single');
 Route::delete('/noticia/{id}', 'NoticiaController@delete');
+Route::post('/noticia', 'NoticiaController@insert');
 
 Route::get('/painel', 'NoticiaController@painel');
